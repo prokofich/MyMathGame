@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.mymathgame.controllers.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.mymathgame.controllers.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_menuGame1Fragment"
+            app:destination="@id/menuGame1Fragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_menuGame2Fragment"
+            app:destination="@id/menuGame2Fragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_menuGame3Fragment"
+            app:destination="@id/menuGame3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/game1Fragment"
+        android:name="com.example.mymathgame.controllers.Game1Fragment"
+        android:label="fragment_game1"
+        tools:layout="@layout/fragment_game1" >
+        <action
+            android:id="@+id/action_game1Fragment_to_menuGame1Fragment"
+            app:destination="@id/menuGame1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuGame1Fragment"
+        android:name="com.example.mymathgame.controllers.MenuGame1Fragment"
+        android:label="fragment_menu_game1"
+        tools:layout="@layout/fragment_menu_game1" >
+        <action
+            android:id="@+id/action_menuGame1Fragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_menuGame1Fragment_to_game1Fragment"
+            app:destination="@id/game1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuGame2Fragment"
+        android:name="com.example.mymathgame.controllers.MenuGame2Fragment"
+        android:label="fragment_menu_game2"
+        tools:layout="@layout/fragment_menu_game2" >
+        <action
+            android:id="@+id/action_menuGame2Fragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_menuGame2Fragment_to_game2Fragment"
+            app:destination="@id/game2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/game2Fragment"
+        android:name="com.example.mymathgame.controllers.Game2Fragment"
+        android:label="fragment_game2"
+        tools:layout="@layout/fragment_game2" >
+        <action
+            android:id="@+id/action_game2Fragment_to_menuGame2Fragment"
+            app:destination="@id/menuGame2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuGame3Fragment"
+        android:name="com.example.mymathgame.controllers.MenuGame3Fragment"
+        android:label="fragment_menu_game3"
+        tools:layout="@layout/fragment_menu_game3" >
+        <action
+            android:id="@+id/action_menuGame3Fragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_menuGame3Fragment_to_game3Fragment"
+            app:destination="@id/game3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/game3Fragment"
+        android:name="com.example.mymathgame.controllers.Game3Fragment"
+        android:label="fragment_game3"
+        tools:layout="@layout/fragment_game3" >
+        <action
+            android:id="@+id/action_game3Fragment_to_menuGame3Fragment"
+            app:destination="@id/menuGame3Fragment" />
+    </fragment>
+</navigation>

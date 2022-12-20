@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".controllers.Game2Fragment">
+
+    <TextView
+        android:layout_width="372dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="2 игра"
+        android:textColor="#1100ff"
+        android:textSize="70dp">
+    </TextView>
+    <TextView
+        android:layout_width="372dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/id_start_timer2"
+        android:hint="3"
+        android:textColor="#1100ff"
+        android:textSize="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/id_game2_tv_level"
+        android:layout_width="372dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="уровень"
+        android:textColor="#1100ff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/id_game2_tv_primer"
+        android:layout_width="372dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="2*5 = ?"
+        android:textColor="#1100ff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/id_game2_tv_true"
+        android:layout_width="372dp"
+        android:layout_height="45dp"
+        android:hint="правильно: 15"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#1100ff" />
+    <TextView
+        android:layout_width="372dp"
+        android:id="@+id/id_game2_tv_false"
+        android:layout_gravity="center"
+        android:hint="неправильно: 5"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#1100ff"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/id_game2_et_result"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#1100ff"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        android:textColor="#1100ff" />
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:backgroundTint="#1100ff"
+        android:id="@+id/id_game2_button_go"
+        android:text="ответить"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/id_game2_again"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="начать заново"
+        android:backgroundTint="#1100ff"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/id_game2_back"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:backgroundTint="#1100ff"
+        android:text="вернуться в меню 2 игры"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+
+
+</LinearLayout>

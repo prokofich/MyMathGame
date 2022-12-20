@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".controllers.MenuFragment">
+
+    <TextView
+        android:layout_width="362dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="меню игр"
+        android:textColor="#f6ff00"
+        android:textSize="60dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/id_menu_next1"
+        android:backgroundTint="#ff0000"
+        android:layout_width="282dp"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:text="к первой игре" />
+    <Button
+        android:id="@+id/id_menu_next2"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:backgroundTint="#1100ff"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="ко второй игре"
+        android:layout_width="282dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/id_menu_next3"
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00ff6a"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="к третьей игре" />
+
+    <Button
+        android:id="@+id/id_menu_exit"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:backgroundTint="#00ffc9"
+        android:text="выйти"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+
+
+</LinearLayout>
